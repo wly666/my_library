@@ -33,4 +33,10 @@ class BooksController < ApplicationController
     Book.create :name=>params[:book][:name], :author=>params[:book][:author]
     redirect_to books_path
   end
+
+  #form_tag时用这个
+  #def create
+  #  Book.create :name=>params[:name], :author=>params[:author]
+  #  redirect_to books_path
+  #end
 end

@@ -1,6 +1,20 @@
-
 <%= form_for @book do |f| %>
   <%= f.text_field :name %><br/>
   <%= f.text_field :author %><br/>
   <%= f.submit "确定" %>
 <% end %>
+<!--
+<% if @book.id.present?
+     url = "/books/#{@book.id}"
+     method = 'put'
+   else
+     url = "/books/"
+     method = 'post'
+end %>
+ <%= form_tag url do %>
+   <%= hidden_field_tag "_method", method %>
+   <%= text_field_tag "book[name]", @book.name %><br/>
+   <%= text_field_tag "book[author]", @book.author%><br/>
+   <%= submit_tag "确定" %>
+ <% end %>
+-->

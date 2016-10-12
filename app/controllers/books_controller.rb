@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-  #layout 'two'
+  layout 'two'
   def index
     @books = Book.all
     @books = Book.where("name like '%#{params[:query]}%'")

@@ -1,0 +1,16 @@
+<h1>请对书名为<%=@book.name%>做出修改</h1>
+
+<!--
+<form action="/books/<%= @book.id%>" method="POST">
+
+  <input type="hidden" name="_method" value="put">
+  <input type="text" name="new_name" value="<%= @book.name%>">
+  <br/>
+  <input type="text" name="new_author" value="<%= @book.author%>">
+  <br/>
+  <input type="submit" value="确定">
+
+</form>
+-->
+
+<%= render :partial =>"form"%>

@@ -7,7 +7,7 @@
 
  development:
    adapter: mysql2
-   database: my_test
+   database: my_library
    username: root
    password: 666
    host: localhost

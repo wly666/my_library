@@ -18,4 +18,4 @@
 //= require jssor.slider-21.1.6.mini
 //= require jquery-1.11.3.min
 //= require jquery.validate
-
+//= require jquery-ui

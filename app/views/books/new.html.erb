@@ -38,3 +38,26 @@ $("#form").validate({
   }
 });
 </script>
+<script>
+$(function() {
+  $( "#dialog" ).dialog({
+    autoOpen:false,
+    show: {
+      effect: "blind",
+      duration: 1000
+    },
+    hide: {
+      effect: "explode",
+      duration: 1000
+    }
+  });
+
+  $( "#opener" ).click(function() {
+    $( "#dialog" ).dialog('open');
+  });
+});
+</script>
+  <div id="dialog" title="弹出框">
+    <p>这时一个简单的弹出窗口页面，该页面可以被移动，改变大小，关闭。</p>
+  </div>
+<button id="opener">点击我弹出窗口</button>

@@ -1,6 +1,6 @@
-<%= form_for @book do |f| %>
-  <%= f.text_field :name %><br/>
-  <%= f.text_field :author %><br/>
+<%= form_for @book, :html=>{:id=>"form"} do |f| %>
+  <div>请输入书名：<%= f.text_field :name %></div><br/>
+  <div>请输入作者：<%= f.text_field :author %></div><br/>
   <%= f.submit "确定" %>
 <% end %>
 <!--

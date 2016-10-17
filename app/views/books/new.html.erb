@@ -10,3 +10,31 @@
 -->
 
 <%=render :partial =>"form" %>
+<style>
+input.error{border:1px solid red}
+label.error {
+  padding-left: 16px;
+  padding-bottom: 2px;
+  font-weight: bold;
+  color: #EA5200;
+}
+</style>
+
+<script>
+$("#form").validate({
+  rules:{
+    "book[name]":"required",
+    "book[author]":{
+      "required":true,
+      "rangelength":[6,10]
+    }
+  },
+  messages:{
+    "book[name]":"请输入用户名",
+    "book[author]":{
+      "required":"请输入作者姓名",
+      "rangelength":"用户名在6-10位"
+    }
+  }
+});
+</script>

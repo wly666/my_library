@@ -12,6 +12,56 @@
 -->
 
 <%=render :partial =>"form" %>
+
+<style>
+label {
+  display: inline-block; width: 5em;
+}
+    fieldset div {
+      margin-bottom: 2em;
+    }
+    fieldset .help {
+      display: inline-block;
+    }
+    .ui-tooltip {
+      width: 210px;
+    }
+</style>
+<script>
+$( function() {
+  var tooltips = $( "[title]" ).tooltip({
+    position: {
+      my: "left top",
+      at: "right+5 top-5",
+      collision: "none"
+    }
+  });
+  $( "#help" )
+    .text( "Show help" )
+    .button()
+    .on( "click", function() {
+      tooltips.tooltip( "open" );
+    })
+} );
+</script>
+<form>
+  <fieldset>
+    <div>
+      <label for="firstname">Firstname</label>
+      <input id="firstname" name="firstname" title="Please provide your firstname.">
+    </div>
+    <div>
+      <label for="lastname">Lastname</label>
+      <input id="lastname" name="lastname" title="Please provide also your lastname.">
+    </div>
+    <div>
+      <label for="address">Address</label>
+      <input id="address" name="address" title="Your home or work address.">
+    </div>
+  </fieldset>
+</form>
+<button id="help"></button>
+
 <style>
 input.error{border:1px solid red}
 label.error {

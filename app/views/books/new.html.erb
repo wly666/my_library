@@ -1,6 +1,8 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 <h1>新增加一本书</h1>
 <!--
-<form action="/books" method="POST">
+  <form action="/books" method="POST">
   <input type="text" name="new_name">
   <br/>
   <input type="text" name="new_author">
@@ -38,6 +40,8 @@ $("#form").validate({
   }
 });
 </script>
+
+
 <script>
 $(function() {
   $( "#dialog" ).dialog({
@@ -57,13 +61,16 @@ $(function() {
   });
 });
 </script>
-  <div id="dialog" title="弹出框">
-    <p>这时一个简单的弹出窗口页面，该页面可以被移动，改变大小，关闭。</p>
-  </div>
-  <button id="opener">点击我弹出窗口</button>
+<div id="dialog" title="弹出框">
+  <p>这时一个简单的弹出窗口页面，该页面可以被移动，改变大小，关闭。</p>
+</div>
+<button id="opener">点击我弹出窗口</button>
+
+
+
 <script>
 $( function() {
   $( "#datepicker" ).datepicker();
 } );
 </script>
- <p>Date: <input type="text" id="datepicker"></p>
+<p>Date: <input type="text" id="datepicker"></p>

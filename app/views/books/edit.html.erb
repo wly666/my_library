@@ -12,7 +12,20 @@
 
 </form>
 -->
-
+<h1>Listing Masks</h1>
+<%= text_field_tag :just_date %>
+<hr>
+<%= text_field_tag :just_phone %>
+<hr>
+<%= text_field_tag :just_alpha %>
+<hr>
+<script>
+$(function(){
+  $('#just_date').mask('99/99/9999',{placeholder:"mm/dd/yyyy"});
+  $('#just_phone').mask('999-9999-9999');
+  $('#just_alpha').mask('aaa',{completed:function(){alert("You typed the following: "+this.val())}}); //只能输入三个字母
+})
+</script>
 <%= render :partial =>"form"%>
 <script type="text/javascript">
 

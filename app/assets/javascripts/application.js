@@ -19,3 +19,5 @@
 //= require jquery-1.11.3.min
 //= require jquery.validate
 //= require jquery-ui
+//= require jquery.maskedinput
+//= require jquery.maskedinput.min

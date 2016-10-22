@@ -21,3 +21,4 @@
 //= require jquery-ui
 //= require jquery.maskedinput
 //= require jquery.maskedinput.min
+//= require ckeditor/init

@@ -19,7 +19,7 @@
         <%= book.name%>
       </td>
       <td>
-        <%= book.author%>
+        <%= raw book.author%>
       </td>
       <td>
         <%=link_to "编辑", edit_book_path(:id => book.id)%>

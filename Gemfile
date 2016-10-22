@@ -35,7 +35,9 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'jquery-ui-rails','5.0.5'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'ckeditor'
   # Use Capistrano for deployment
   # gem 'capistrano-rails', group: :development
 

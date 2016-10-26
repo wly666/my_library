@@ -16,12 +16,14 @@
   <% @books.each do |book|%>
     <tr>
       <td>
-        <%= book.name%>
+        <!--给某一列加link-->
+        <%= link_to book.name%>
       </td>
       <td>
         <%= raw book.author%>
       </td>
       <td>
+        <%=link_to "查看",book_path(:id => book.id)%>
         <%=link_to "编辑", edit_book_path(:id => book.id)%>
         <%=link_to "删除", "/books/#{book.id}", :method =>"delete",:data=> {:confirm => "确定要删除吗?"}%>
       </td>
